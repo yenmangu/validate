@@ -1,11 +1,19 @@
 <html>
+  <head>
+    <style>
+      input:invalid:required {
+        background-image: linear-gradient(to right, rgb(254, 222, 93), rgb(112, 235, 180));
+      }
+      input:valid {
+        background-color: rgb(255, 139, 57);
+      }
+    </style>
+  </head>
   <body>
     <form>
       <label for="choose">Would you prefer a banana or cherry?</label>
-      <input id="choose" name="i_like">
+      <input id="choose" required="required" name="i_like" required pattern="[Bb]anana|[Cc]herry">
       <button>Submit</button>
     </form>
   </body>
-  
-  
 </html>
