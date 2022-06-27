@@ -44,7 +44,9 @@
           //if the field doesnt contain an email address, 
           // display the following error message
           emailError.textContent = "Entered value needs to be an e-mail address";
-          //if the data is too short, display t
+          //if the data is too short, display the following error message.
+          emailError.textContent = `E-mail should be at least ${email.minlength}
+          characters, you have only entered ${email.value.length}.`
         }
       }
     </script>
